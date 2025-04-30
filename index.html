@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindhi Transliterator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sindhi Transliterator</h1>
+        <div class="input-section">
+            <label for="inputScript">Input Script:</label>
+            <select id="inputScript">
+                <option value="devanagari">Devanagari</option>
+                <option value="arabic">Perso-Arabic</option>
+                <option value="roman">Roman</option>
+            </select>
+        </div>
+        
+        <div class="text-area">
+            <textarea id="inputText" placeholder="Enter Sindhi text here..."></textarea>
+        </div>
+        
+        <button id="transliterateBtn">Transliterate</button>
+        
+        <div class="output-section">
+            <div class="output">
+                <h3>Devanagari Output</h3>
+                <div id="devanagariOutput" class="output-box"></div>
+            </div>
+            <div class="output">
+                <h3>Roman Output</h3>
+                <div id="romanOutput" class="output-box"></div>
+            </div>
+	    <div class="output">
+                <h3>Perso-Arabic Output</h3>
+                <div id="arabicOutput" class="output-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
